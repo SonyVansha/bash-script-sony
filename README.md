@@ -2,4 +2,4 @@
 
 ### Pengumpulan Tugas
 1.[Bash Basic Condition]
-> [code]
+> [code](source/1/treein.sh)
