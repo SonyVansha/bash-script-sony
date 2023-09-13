@@ -6,12 +6,12 @@ if command -v $packet;then
         echo "Sistem sudah terinstall"
 else
         echo "Sistem ini belum ada"
-        read -p "Apakah Anda ingin melanjutkan? [Y/n]" izin
+        read -p "Apakah Anda ingin melanjutkan? [Y/n] " izin
 fi
 
 # Hasil dari input
 case $izin in
-        Y |y)
+        Y | y | yes )
                 apt install -y
                 ;;
         *)
