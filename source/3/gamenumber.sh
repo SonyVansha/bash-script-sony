@@ -9,7 +9,7 @@ random_num() {
 # Tebakan pemain
 target_num=$(random_num)
 
-#
+# Membuat loop
 while true; do
 echo "========================================
 Kami telah memiliki angka, silakan tebak!
@@ -20,9 +20,10 @@ read -p "Masukan angka : " tebak
         if [[ $tebak -eq $target_num ]];then
                 echo "Selamat anda betul, angka yang benar yaitu $target_num"
                 break
-        elif [[ $guess -lt 1 || $guess -gt 10 ]]; then
+	#Menganalisa jika input no antara 1 dan 10
+        elif [[ $tebak -lt 1 || $tebak -gt 10 ]]; then
                 echo "Tebakan tidak valid. Masukkan angka antara 1 dan 10
 	else
-                echo "Salah"
+                echo "Maaf Jawaban Salah, Silahkan coba lagi"
         fi
 done
