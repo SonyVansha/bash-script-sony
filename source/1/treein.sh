@@ -12,7 +12,7 @@ fi
 # Hasil dari input
 case $izin in
         Y | y | yes )
-                apt install -y
+                apt install $packet -y
                 ;;
         *)
                 echo "dibatalkan"
